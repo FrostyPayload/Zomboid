@@ -5,7 +5,7 @@ The settings are found in 2 files, Burningcherry.ini and Burningcherry_SandboxVa
 
 
 
-Default info about Burningcherry_SandboxVars.lua file:
+Below is the Default info about Burningcherry_SandboxVars.lua file:
 
     Zombies = 4, (How many zombies when the server starts, 1 is insane amount, 5 is none)
     Distribution = 1, (Where the zombies gravitate to, 1 is urban (in cities), 2 is uniform (everywhere))
