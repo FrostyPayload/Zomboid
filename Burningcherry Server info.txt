@@ -1,0 +1,35 @@
+Quick info
+
+
+# logon # 
+
+NAME: Burning cherry server
+IP:77.68.11.53
+PORT: 16261
+PASS:BurnttoDeath
+
+
+
+# Get the options file from server #
+# editable in notepad #
+1) open cmd app
+2) scp steam@77.68.11.53:/home/steam/Zomboid/Server/Burningcherry.ini C:\path/to/save
+3) pass: Burningcherry420
+
+
+
+
+# Paste options back #
+1) open cmd
+2) scp C:\Your/path/to/edited/Burningcherry.ini steam@77.68.11.53:/home/steam/Zomboid/Server/Burningcherry.ini
+3) same pass
+
+
+
+
+options need reloading to take effect
+
+# reload options #
+1) login as an admin
+2) Enter to bring up chat
+3) send  /reloadoptions
