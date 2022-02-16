@@ -6,7 +6,7 @@ Find all settings listed below
 
 Default info about Burningcherry_SandboxVars.lua file:
 
-Zombies = 4, (How many zombies when the server starts, 1 is insane amount, 5 is none)
+    Zombies = 4, (How many zombies when the server starts, 1 is insane amount, 5 is none)
     Distribution = 1, (Where the zombies gravitate to, 1 is urban (in cities), 2 is uniform (everywhere))
     DayLength = 3, (1 is 15 minutes, 2 is 30 minutes, 3 is 1 hour, 4 is 2 hours, 5 is 3 hours, 6 is 4 hours, 7 is 5 hours, 8 is 12 hours, 9 is real-time)
     StartYear = 1, (1 is the 1st year etc)
