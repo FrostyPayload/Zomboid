@@ -1,7 +1,8 @@
 # Zomboid
 Burning cherry Project Zomboid Server Settings
 
-Find all settings listed below
+The settings are found in 2 files, Burningcherry.ini and Burningcherry_SandboxVars.lua
+
 
 
 Default info about Burningcherry_SandboxVars.lua file:
