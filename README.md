@@ -5,7 +5,7 @@ The settings are found in 2 files, Burningcherry.ini and Burningcherry_SandboxVa
 
 
 
-Below is the Default info about Burningcherry_SandboxVars.lua file:
+Below is the Default settings of these two files along with info about what the settings mean if needed:
 
     Zombies = 4, (How many zombies when the server starts, 1 is insane amount, 5 is none)
     Distribution = 1, (Where the zombies gravitate to, 1 is urban (in cities), 2 is uniform (everywhere))
@@ -130,3 +130,92 @@ Below is the Default info about Burningcherry_SandboxVars.lua file:
         RallyTravelDistance = 30, (The distance real zombies travel to from groups when idle. Minimum=5, Maximum=50, Default=20)
         RallyGroupSeparation = 15, (The distance between zombie groups. Minimum=5, Maximum=25, Default=15)
         RallyGroupRadius = 4, (How close members of a group stay to the group's leader. Minimum=1, Maximum=10, Default=3) 
+
+
+Burningcherry.ini file:
+
+    nightlengthmodifier=1.0 (controls how dark nightime is. 1.0=normal darkness, 0.0=bright)
+    PVP=true (Enable PVP. tue=on, false=off)
+    PauseEmpty=false (true=the server won't update if no players are on it (farming won't progress, etc., false=server time will run all time on)
+    GlobalChat=true (enable the Global Chat (/all command in chat). tue=chat on, false=chat off)
+    Open=true (server is open to all (no whitelist), tue=server open to all, false=players have to bee added to the whitelist)
+    ServerWelcomeMessage= <RGB:1,0,0> Welcome to Project Zomboid MP ! to chat locally press 't', to global chat press 'y' or add '/all' before chatting <LINE> Type '/help' to have a list of available commands <LINE> <RGB:1,1,1> (Message that is displayed when joining the server)
+    LogLocalChat=false (display local chat in the chat panel(only players nearby can see it), tue=on, false=off )
+    AutoCreateUserInWhiteList=false (If your server is open, this option will allow the server to create the user in whitelist if they entered the server with a password, so his username will be protected)
+    DisplayUserName=true (False = you won't see another players username on top of their head + their name won't be logged inside the local chat)
+    SpawnPoint=0,0,0 (Use this to define a custom spawn point instead of the random one from character creation)
+    SafetySystem=true (Allow the user to change their safety (if false and if PVP=true, then the safety will always be off)
+    ShowSafety=true (Allow the players to see if someone have his safety off with the skull icon)
+    SafetyToggleTimer=100 (When the player disable safety it take some times before HE enable it (tho the other players see it instantly), define it here)
+    SafetyCooldownTimer=120 (Every time you hit someone in safety off, add this timer to the cool down before you can actually toggle safety off)
+    SpawnItems=Add spawning items to new player, ex : Base.Axe,Base.WaterBottleFull... (every item need to be separated by a ",")
+    DefaultPort=16261 (Default port used by the server)
+    ResetID=123456789 (determines if the server has undergone a soft-reset. If this number does match the client, the client must create a new character. Used in conjunction with PlayerServerID. Please, backup these IDs somewhere) [*changed]
+    Mods=CraftableAxes;Katana;MREMeal;NecroForge (Used to add mods to your server, like maps or other things, player will NEED to have this mods installed)
+    Map=MD Cortman Medical;MD Kate & Baldspot;MD Large Warehouse;MD Sunstar Hotel;The Farm;The Mall;WP Apartments;WP Food & Hardware Store;WP Giga Mart;WP Police Station;WP School;WP Storage Lots;WP Town Hall;WP Twiggy's;Muldraugh, KY
+    DoLuaChecksum=true (Do the lua checksum. Players with modified Lua files that differ from the server files will not be able to connect. true=Lua check, false=no lua check)
+    Public=false (If true send the info of the server to pz.com to be visible in the public server list)
+    PublicName=Your PZ Server (Required for public server)
+    PublicDescription= server with high loot (Optionnal, for public server)
+    MaxPlayers=64 (Max players who can connect on the server (admin can by pass this))
+    PingFrequency=10 (Time between each client ping, in second)
+    PingLimit=400 (Ping limit before being kicked, need to be 5 time over, in millisecond, 0 disbaled it. Using a value of 250 is good to avoid connections from china)
+    HoursForLootRespawn=0 (Enable loot respawn if > 0, then the cell need to be unseen for X (this parameter) in-game hours before respawn loot in it)
+    MaxItemsForLootRespawn=4 (For the loot respawn, if a container have more items than this number, it won't respawn loot (use it to limit respawn in safe house for example..)
+    ConstructionPreventsLootRespawn=true (items will not respawn in buildings that players have built structures in (baricading counts). true=on, false=off; depends on 2 things: the amount of loot needed in a container to respawn and the amount of time a cell has to be unseen to respawn. Usually it doesn't happen because players fill their containers and visit frequently. Even if it did. Loot respawn will only ever ADD to a container. It won't delete or randomize a container)
+    DropOffWhiteListAfterDeath=false (remove player accounts from the whitelist after death. Prevents creating a new character after death on)
+    NoFire=false (all forms of fire are disabled. except campfires)
+    AnnounceDeath=false (if true, every time a player dies a message will be displayed in the chat)
+    MinutesPerPage=1.0 (the number of game-world minutes it takes to read one page of a book)
+    SaveWorldEveryMinutes=0 (loaded pats of the map are saved after this many real-world minutes have passed. The map is usually saved only after clients leave a loaded area)
+    PlayerSafehouse=false (admins and players may claim safehouses)
+    AdminSafehouse=false (only admins may claim safehouses)
+    SafehouseAllowTrepass=true (allow non-members to enter a safehouse without being invited)
+    SafehouseAllowFire=true (allow fire to damage safehouses)
+    SafehouseAllowLoot=true (allow non-members to take items from safehouses)
+    SafehouseAllowRespawn=false (players spawn in a safehouse they were a member of before they died)
+    SafehouseDaySurvivedToClaim=0 (players must have survived this many game-world days before they may claim a safehouse)
+    SafeHouseRemovalTime=144 (players are automatically removed from a safehouse they have not visited for this many real-time hours)
+    AllowDestructionBySledgehammer=true (allow players to destroy world objects with the sledgehammer)
+    KickFastPlayers=false (kick players that appear to be moving faster than is possible. May be buggy -- use with cation)
+    ServerPlayerID=1234567899 (Determines if the character is from another server or singeplayer. This value may be changed by soft-resets. If this number does match the client, the client must create a new character. Used in conjunction with ResetID. Please, backup these IDs somewhere) [*changed]
+    RCONPort=12345 (Port for RCON) [*example]
+    RCONPassword= YOURPASSWORD (Password for RCON) [*example]
+    Password= SERVERLOGINPASSWORD (clients must know this password to join the server. Ignored when hosting a server via the Hosts button) [*example]
+    MaxAccountsPerUser=0 (limits the number of different accounts a single Steam unser may create on this server. Ignored when using the hosts button)
+    SleepAllowed=false (Enable sleep)
+    SleepNeeded=false (If true you will need to sleep when exhausted)
+    WorkshopItems=624489512;972954692;670807387 (MOD + MAP IDs - folder can be found at: %\Steam\SteamApps\workshop\content\)
+    SteamScoreboard=true (show steam usernames and avatars in the player list. true=visible to everyone, false=visible to no one, admin=visible to admins)
+    CoopServerLaunchTimeout=20
+    CoopMasterPingTimeout=60
+    VoiceEnable=true (In game Voip)
+    VoiceComplexity=5
+    VoicePeriod=20
+    VoiceSampleRate=24000
+    VoiceBuffering=8000
+    VoiceMinDistance=1.0
+    VoiceMaxDistance=50.0
+    Voice3D=true
+    server_browser_announced_ip=
+    UseTCPForMapDownloads=false
+    PlayerRespawnWithSelf=false
+    PlayerRespawnWithOther=false
+    FastForwardMultiplier=40.0
+    PlayerSaveOnDamage=true
+    SaveTransactionID=false
+    DisableSafehouseWhenPlayerConnected=false
+
+    Faction=true (enable Factions)
+    FactionDaySurvivedToCreate=0 (How many days you must survive to create a Faction)
+    FactionPlayersRequiredForTag=1
+    AllowTradeUI=true (Allows you to trade among players)
+    HoursForWorldItemRemoval=0.0 (How many in-game hrs before corpses dissappear)
+    WorldItemRemovalList=Base.Vest,Base.Shirt,Base.Blouse,Base.Skirt,Base.Shoes
+    ItemRemovalListBlacklistToggle=false
+    DisableRadioStaff=false
+    DisableRadioAdmin=true
+    DisableRadioGM=true
+    DisableRadioOverseer=false
+    DisableRadioModerator=false
+    DisableRadioInvisible=true
